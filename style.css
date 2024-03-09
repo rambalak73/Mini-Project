@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+h1 {
+
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.p-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+
+.nav-list {
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #161616;
+
+}
+
+.nav-list li {
+    list-style: none;
+
+}
+
+.nav-list a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+}
+
+
+.left,
+.right {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    background-color: #262525;
+    width: 70%;
+    padding-left: 3rem;
+
+}
+
+.right {
+    background: linear-gradient(-45deg, #3877FF, #262525 70%);
+    width: 30%;
+    font-size: 1rem;
+
+
+
+}
+
+span{
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+}
+
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+
+}
+
+.icons .fa-brands {
+    color: #bbb;
+    font-size: 2rem;
+}
+
+.content {
+    margin-left: 4rem;
+}
+
+.content h1 {
+
+    font-size: 4rem;
+    color: #5db9ee;
+}
+
+.content h2 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.name {
+    color: blueviolet;
+}
+
+.content p {
+    max-width: 40rem;
+    color: violet;
+    font-size: 1.2rem;
+    margin: 1.1rem 0 0 0;
+    line-height: 1.8rem;
+}
+
+
+
+.icons .fa-brands:hover {
+    cursor: pointer;
+    background: linear-gradient(#fff, #3877FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.design .circle {
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.circle:nth-child(1) {
+    background: linear-gradient(90deg, transparent 50%, #262525 50%);
+    width: 25rem;
+}
+
+.circle:nth-child(2) {
+
+    background-color: white;
+    width: 20rem;
+    background-image: url("images/harsh.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: .1rem solid white;
+    box-shadow:
+        0 0 1rem #fff,
+        inset 0 0 1rem #fff,
+        0 0 2rem #3877FF,
+        inset 0 0 2rem #3877FF,
+        0 0 4rem #3877FF,
+        inset 0 0 4rem #3877FF;
+
+}
+
+
+.about-me,
+.skill {
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+
+.skills {
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 0rem 1rem 0rem;
+    background: linear-gradient(to right,
+            rgb(0 0 0 / 0.2),
+            rgb(0 0 0 / 0.2)),
+        url("images/stock.jpg");
+    /* background-size: cover; */
+    position: static;
+
+
+}
+
+.skill-container {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.skill-box {
+
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    align-self: center;
+
+    margin: 5px 10px 5px 5px;
+    padding: 5px 10px 5px 5px;
+    display: block;
+    justify-self: center;
+
+}
+
+.skill-box i {
+    font-size: 2rem;
+    /* text-align: center; */
+    margin-top: 10px;
+    margin-left: 45%;
+
+
+}
+
+.skill-box h1 {
+    text-align: center;
+    color: #de6902;
+
+}
+
+.skill-box p {
+    color: white;
+    /* text-wrap: balance; */
+
+}
+
+
+
+.mybusiness {
+    font-size: 4rem;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+
+.business {
+    display: flex;
+}
+
+.b-box {
+    height: auto;
+    width: auto;
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    border: 2px solid black;
+    margin: 10px 10px 10px 10px;
+    list-style: lower-roman;
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+    text-wrap: balance;
+    background-color: lightblue;
+
+}
+
+.img {
+    background-image: none;
+    height: 80px;
+    opacity: 0.7;
+}
+
+.img:hover{
+    opacity: 1;
+height: 90px;}
+
+.btn {
+    display: inline-block;
+    background: var(--gradient-olive-bg);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: green;
+    cursor: pointer;
+    box-shadow: 5px 5px;
+
+}
+
+
+.creator a{
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+}
